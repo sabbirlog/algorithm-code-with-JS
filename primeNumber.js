@@ -13,7 +13,7 @@ function isPrimeNumber(n) {
   //     return false;
   //   }
 
-  for (let i = 2; i < n; i++) {
+  for (let i = 2; i < Math.sqrt(n); i++) {
     if (n % i === 0) {
       return false;
     }
@@ -27,3 +27,6 @@ console.log(isPrimeNumber(5)); // true
 console.log(isPrimeNumber(4)); // false
 console.log(isPrimeNumber(8)); // false
 console.log(isPrimeNumber(11)); // true
+
+
+// Big-O = O(sqrt(n))
